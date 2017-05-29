@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html>
+@{
+    Layout = "";
+}
+<html>
+
+<head>
+    <title>Home - WienSubs</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="~/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <div class="header-video-container">
+        <div class="video-container">
+            <video id="video" width="100%" preload="auto" autoplay loop muted>
+                <source src="ReZeroAMV.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-overlay">
+            <div class="anime-source">
+                <a class="menu-font" href="https://myanimelist.net/anime/31240/Re_Zero_kara_Hajimeru_Isekai_Seikatsu">Re:Zero kara Hajimeru Isekai Seikatsu</a>
+            </div>
+            <div class="nav-header-bar">
+                <img src="Wien-subs-logo-174x75-video.png" />
+                <div class="menu-container">
+                    <ul class="menu">
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">
+                                    Acasa
+                                    <div class="description">Nu scapati de noi!</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Forum</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Proiectele Noastre</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">
+                                    Cereri
+                                    <div class="description">Fara ezitari.</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Probleme</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Staff</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Intrebari Frecvente</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <a href="#">Cand apare?</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-option-content">
+                                <div class="anime-search">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                    <input type="text" class="anime-search-input" placeholder="Cauta anime...">
+                                    <div class="anime-search-results">
+                                        <div class="result-list">
+                                            <div class="result" style="display:none">
+                                                <div class="anime-image">
+                                                    <img src="https://myanimelist.cdn-dena.com/images/anime/3/40451.jpg" />
+                                                </div>
+                                                <div class="details">
+                                                    <div class="anime-title"><b>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</b> (<span class="anime-type">TV</span>)</div>
+                                                    <div class="anime-score"><span class="glyphicon glyphicon-star" style="color:gold;"></span><span class="result-score">7.49</span></div>
+                                                    <div class="anime-episodes">Episoade: 366</div>
+                                                    <div class="anime-status">Finished Airing</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="no-results" style="display:none">Niciun rezultat pentru "<span class="search-value"></span>"</div>
+                                        <div class="search-more">
+                                            Vezi toate rezulatele pentru "<span class="search-value"></span>"
+                                            <div class="spinner">
+                                                <div class="bounce1"></div>
+                                                <div class="bounce2"></div>
+                                                <div class="bounce3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- HEADER END -->
+
+
+    <div id="container">
+
+        <!-- NEW EPISODES SLIDESHOW START -->
+        <div class="row news">
+            <div class="news-header">
+                Ultimele Episoade
+            </div>
+
+            <div style="position: relative">
+                <i class="glyphicon glyphicon-chevron-left left"></i>
+                <i class="glyphicon glyphicon-chevron-right right"></i>
+                <div class="news-list">
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/2.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 10</div>
+                            </div>
+                            <div class="anime-name">Date A Live</div>
+                            <a href="https://myanimelist.net/anime/15583">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/3.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 4</div>
+                                <div class="episode">Episodul 3</div>
+                                <div class="episode">Episodul 2</div>
+                            </div>
+                            <div class="anime-name">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</div>
+                            <a href="https://myanimelist.net/anime/10793">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/4.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 7</div>
+                            </div>
+                            <div class="anime-name">Fate/Zero</div>
+                            <a href="https://myanimelist.net/anime/10087">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/5.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 9</div>
+                                <div class="episode">Episodul 8</div>
+                            </div>
+                            <div class="anime-name">IS: Infinite Stratos</div>
+                            <a href="https://myanimelist.net/anime/9041">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/6.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 4</div>
+                            </div>
+                            <div class="anime-name">Bakemonogatari</div>
+                            <a href="https://myanimelist.net/anime/5081">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/7.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 1</div>
+                            </div>
+                            <div class="anime-name">Gakusen Toshi Asterisk</div>
+                            <a href="https://myanimelist.net/anime/30544">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/8.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 2</div>
+                            </div>
+                            <div class="anime-name">Highschool of the Dead</div>
+                            <a href="https://myanimelist.net/anime/8074">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/9.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 20</div>
+                            </div>
+                            <div class="anime-name">Akame Ga Kill!</div>
+                            <a href="https://myanimelist.net/anime/10793">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/10.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 7</div>
+                            </div>
+                            <div class="anime-name">Kono Subarashii Sekai ni Shukufuku wo! 2</div>
+                            <a href="https://myanimelist.net/anime/32937">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-list-item">
+                        <img src="~/images/AnimeImages/1.jpg" />
+                        <div class="item-overlay">
+                            <div class="episodes">
+                                <div class="episode">Episodul 2</div>
+                                <div class="episode">Episodul 1</div>
+                            </div>
+                            <div class="anime-name">Guilty Crown</div>
+                            <a href="https://myanimelist.net/anime/10793">
+                                <img src="apple-touch-icon-256.png" width="25" class="mal-source" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEW EPISODES SLIDESHOW END -->
+
+        <div class="row">
+            <div class="col-md-12 col-lg-8 left-side">
+                <!-- ANIME RECOMANDATION SLIDESHOW START -->
+                <div class="anime-recom">
+                    <div class="slideshow container-slideshow">
+                        <div class="slideshow-buttons">
+                            <i class="glyphicon glyphicon-chevron-left prev-slide"></i>
+                            <i class="glyphicon glyphicon-chevron-right next-slide"></i>
+                        </div>
+                        <div class="slides">
+                            <div data-index="1" class="slide active">
+                                <img src="~/images/animeslideshowimages/akame ga kill.jpeg" class="slide-image" />
+                                <div class="slide-description">
+                                    <div class="slide-header">
+                                        <span class="anime-title">
+                                            Akame Ga Kill!
+                                            <a href="https://myanimelist.net/anime/15583">
+                                                <img src="apple-touch-icon-256.png" class="mal-source" />
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="anime-description">
+                                        Night Raid is the covert assassination branch of the Revolutionary Army, an uprising assembled to overthrow
+                                        Prime Minister Honest, whose avarice and greed for power has lead him to take advantage of the child
+                                        emperor's inexperience. Without a strong and benevolent leader, the rest of the nation is left to drown
+                                        in poverty, strife, and ruin. Though the Night Raid members are all experienced killers, they understand
+                                        that taking lives is far from commendable and that they will likely face retribution as they mercilessly
+                                        eliminate anyone who stands in the revolution's way.
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="2" class="slide">
+                                <img src="~/images/animeslideshowimages/bakemonogatari.jpg" class="slide-image" />
+                                <div class="slide-description">
+                                    <div class="slide-header">
+                                        <span class="anime-title">
+                                            Bakemonogatari
+                                            <a href="https://myanimelist.net/anime/15583">
+                                                <img src="apple-touch-icon-256.png" class="mal-source" />
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="anime-description">
+                                        Koyomi Araragi, a third-year high school student, manages to survive a vampire attack with the help of
+                                        Meme Oshino, a strange man residing in an abandoned building. Though being saved from vampirism and now
+                                        a human again, several side effects such as superhuman healing abilities and enhanced vision still remain.
+                                        Regardless, Araragi tries to live the life of a normal student, with the help of his friend and the class
+                                        president, Tsubasa Hanekawa.
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="3" class="slide">
+                                <img src="~/images/animeslideshowimages/konosuba.jpg" class="slide-image" />
+                                <div class="slide-description">
+                                    <div class="slide-header">
+                                        <span class="anime-title">
+                                            Kono Subarashii Sekai ni Shukufuku wo!
+                                            <a href="https://myanimelist.net/anime/15583">
+                                                <img src="apple-touch-icon-256.png" class="mal-source" />
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="anime-description">
+                                        After dying a laughable and pathetic death on his way back from buying a game, high school student and
+                                        recluse Kazuma Satou finds himself sitting before a beautiful but obnoxious goddess named Aqua. She provides
+                                        the NEET with two options: continue on to heaven or reincarnate in every gamer's dream—a real fantasy
+                                        world! Choosing to start a new life, Kazuma is quickly tasked with defeating a Demon King who is terrorizing
+                                        villages. But before he goes, he can choose one item of any kind to aid him in his quest, and the future
+                                        hero selects Aqua. But Kazuma has made a grave mistake—Aqua is completely useless!
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-index="4" class="slide">
+                                <img src="~/images/animeslideshowimages/fate-zero.jpg" class="slide-image" />
+                                <div class="slide-description">
+                                    <div class="slide-header">
+                                        <span class="anime-title">
+                                            Fate/Zero
+                                            <a href="https://myanimelist.net/anime/15583">
+                                                <img src="apple-touch-icon-256.png" class="mal-source" />
+                                            </a>
+                                        </span>
+                                    </div>
+                                    <div class="anime-description">
+                                        With the promise of granting any wish, the omnipotent Holy Grail triggered three wars in the past, each
+                                        too cruel and fierce to leave a victor. In spite of that, the wealthy Einzbern family is confident that
+                                        the Fourth Holy Grail War will be different; namely, with a vessel of the Holy Grail now in their grasp.
+                                        Solely for this reason, the much hated "Magus Killer" Kiritsugu Emiya is hired by the Einzberns, with
+                                        marriage to their only daughter Irisviel as binding contract.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ANIME RECOMANDATION SLIDESHOW END -->
+                <!-- ANNOUNCEMETNS START -->
+                <div class="anns">
+                    <div class="anns-header"><i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i> NEWS</div>
+                    <div class="anns-list">
+                        <div class="anns-list-item anunt">
+                            <div class="ann-type">Anunt</div>
+                            <div class="ann-title">Ce să fie?!</div>
+                            <div class="ann-author"><span>NaiHaz</span>, februarie 20, 2017</div>
+                        </div>
+                        <div class="anns-list-item new-anime-season">
+                            <div class="ann-type">Anime Sezon Nou</div>
+                            <div class="ann-title">Sezonul 4 din "High School DxD" anuntat.</div>
+                            <div class="ann-author"><span>NaiHaz</span>, ianuarie 11, 2017</div>
+                        </div>
+                        <div class="anns-list-item anunt">
+                            <div class="ann-type">Anunt</div>
+                            <div class="ann-title">[News 07 Ian] Știrile Wien Subs</div>
+                            <div class="ann-author"><span>NaiHaz</span>, ianuarie 2, 2017</div>
+                        </div>
+                        <div class="anns-list-item anunt">
+                            <div class="ann-type">Anunt</div>
+                            <div class="ann-title">Cum să ne uităm împreună la anime?</div>
+                            <div class="ann-author"><span>NaiHaz</span>, ianuarie 1, 2017</div>
+                        </div>
+                        <div class="anns-list-item new-anime-others">
+                            <div class="ann-type">Anime OVA/Special</div>
+                            <div class="ann-title">OVA pentru "Akatsuki no Yona" anuntat.</div>
+                            <div class="ann-author"><span>NaiHaz</span>, ianuarie 11, 2017</div>
+                        </div>
+                        <div class="anns-list-item anunt">
+                            <div class="ann-type">Anunt</div>
+                            <div class="ann-title">La mulți ani 2017!</div>
+                            <div class="ann-author"><span>NaiHaz</span>, decembrie 31, 2016</div>
+                        </div>
+                        <div class="anns-list-item new-anime">
+                            <div class="ann-type">Anime Nou</div>
+                            <div class="ann-title">Anime-ul "Saijaku Muhai no Bahamut" anuntat pentru Winter 2016.</div>
+                            <div class="ann-author"><span>NaiHaz</span>, ianuarie 11, 2017</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ANNOUNCEMETNS END -->
+            </div>
+
+            <div class="col-md-12 col-lg-4 right-side">
+                <!-- FACEBOOK + ANIME GENRE FILTER START -->
+                <div style="text-align: center;">
+                    <div class="fb-like-box-container">
+                        <iframe id="facebook-like-box" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwiensub%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=531637330233211"
+                                width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+                <div style="width:100%;">
+                    <div class="genre-filter">
+                        <div class="search-details">
+                            <span class="filter-header">CAUTA DUPA GEN</span>
+                            <div class="genre-list">
+                                <span>Comedie</span>
+                                <span>Actiune</span>
+                                <span>Horror</span>
+                                <span>Romantic</span>
+                                <span>Istoric</span>
+                                <span>Fantezie</span>
+                                <span>Shounen</span>
+                                <span>Demoni</span>
+                                <span>Ecchi</span>
+                                <span>Mister</span>
+                                <span>Drama</span>
+                                <span>Harem</span>
+                                <span>Aventura</span>
+                                <span>Masini</span>
+                                <span>Dementia</span>
+                                <div class="more-genre" style="display: none;">
+                                    <span>Joc</span>
+                                    <span>Josei</span>
+                                    <span>Copii</span>
+                                    <span>Magie</span>
+                                    <span>Arte Martiale</span>
+                                    <span>Mecha</span>
+                                    <span>Muzica</span>
+                                    <span>Parodie</span>
+                                    <span>Politie</span>
+                                    <span>Samurai</span>
+                                    <span>Scoala</span>
+                                    <span>Sci-Fi</span>
+                                    <span>Shoujo</span>
+                                    <span>Shoujo Ai</span>
+                                    <span>Shounen</span>
+                                    <span>Shounen Ai</span>
+                                    <span>Spatiu</span>
+                                    <span>Sport</span>
+                                    <span>Super Puteri</span>
+                                    <span>Supernatural</span>
+                                    <span>Vampiri</span>
+                                    <span>Yaoi</span>
+                                    <span>Armata</span>
+                                    <span>Psihologic</span>
+                                    <span>Seinen</span>
+                                    <span>Slice of Life</span>
+                                    <span>Thriller</span>
+                                </div>
+                                <i class="fa fa-angle-double-down more-genre-btn" aria-hidden="true"></i>
+
+
+                            </div>
+                            <div class="search-button">
+                                <a>Cauta <span class="glyphicon glyphicon-search"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FACEBOOK + ANIME GENRE FILTER START -->
+                <!-- TOP ANIME START -->
+                <div class="top-anime">
+                    <div class="sec-header">
+                        <i class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></i> Anime Top 10
+                    </div>
+                    <div class="ranking component-shadow">
+                        <div class="podium">
+                            <div class="place">
+                                <img id="images" src="~/images/AnimeImages/1.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #1 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Guilty Crown - 4213</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <img src="~/images/AnimeImages/2.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #2 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Date A Live - 3621</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <img src="~/images/AnimeImages/3.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #3 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</span> - 2765
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-10">
+                            <div class="top-10-score">#4 Fate/Zero - 910</div>
+                            <div class="top-10-score">#5 IS: Infinite Stratos - 859</div>
+                            <div class="top-10-score">#6 Bakemonogatari - 820</div>
+                            <div class="top-10-score">#7 Gakusen Toshi Asterisk - 792</div>
+                            <div class="top-10-score">#8 High School of the Dead - 720</div>
+                            <div class="top-10-score">#9 Akame Ga Kill! - 612</div>
+                            <div class="top-10-score">#10 Kono Subarashii Sekai ni Shukufuku wo! 2 - 521</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="show-top-10" data-target=".top-10">
+                            <i class="fa fa-angle-double-down" aria-hidden="true"></i> #4 - #10 <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- TOP ANIME END -->
+                <!-- TREND ANIME START -->
+                <div class="trend-anime">
+                    <div class="sec-header">
+                        <i class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></i> Trend (Ultima Luna)
+                    </div>
+                    <div class="ranking component-shadow">
+                        <div class="podium">
+                            <div class="place">
+                                <img id="images" src="~/images/AnimeImages/1.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #1 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Guilty Crown - 4213</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <img src="~/images/AnimeImages/2.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #2 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Date A Live - 3621</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <img src="~/images/AnimeImages/3.jpg" />
+                                <div class="item-overlay">
+                                    <div class="rank">
+                                        #3 <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="score">
+                                        <span>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka</span> - 2765
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-10">
+                            <div class="trend-10-score">#4 Fate/Zero - 910</div>
+                            <div class="trend-10-score">#5 IS: Infinite Stratos - 859</div>
+                            <div class="trend-10-score">#6 Bakemonogatari - 820</div>
+                            <div class="trend-10-score">#7 Gakusen Toshi Asterisk - 792</div>
+                            <div class="trend-10-score">#8 High School of the Dead - 720</div>
+                            <div class="trend-10-score">#9 Akame Ga Kill! - 612</div>
+                            <div class="trend-10-score">#10 Kono Subarashii Sekai ni Shukufuku wo! 2 - 521</div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="show-top-10" data-target=".trend-10">
+                            <i class="fa fa-angle-double-down" aria-hidden="true"></i> #4 - #10 <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- TREND ANIME END -->
+                <!-- LASTEST COMMENTS START -->
+                <div class="last-comm">
+                    <div class="sec-header">
+                        <i class="fa fa-comments" aria-hidden="true"></i> Ultimele Comentarii
+                    </div>
+                    <div class="last-comm-list component-shadow">
+                        <div class="comm">
+                            <span class="comm-author">Adolfis: </span>
+                            <p class="comm-msg">“ Mersi pentru traducere :) ”</p>
+                            <a class="comm-source">Digimon Adventure tri – Episodul 11</a>
+                            <span class="comm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 6 minutes ago</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="comm">
+                            <span class="comm-author">BnB: </span>
+                            <p class="comm-msg">“ Bravo,mersi pt episod ”</p>
+                            <a class="comm-source">Hand Shakers – Episodul 09</a>
+                            <span class="comm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 1 hour ago</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="comm">
+                            <span class="comm-author">Melcul: </span>
+                            <p class="comm-msg">“ multumesc pentru munca depusa ”</p>
+                            <a class="comm-source">Toaru Majutsu no Index II – Episodul 20</a>
+                            <span class="comm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 hours ago</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="comm">
+                            <span class="comm-author">DEL: </span>
+                            <p class="comm-msg">“ GINTAMA 2017 ”</p>
+                            <a class="comm-source">Ce anime ați vrea să fie reuploadat?</a>
+                            <span class="comm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 3 hours ago</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="comm">
+                            <span class="comm-author">ayase: </span>
+                            <p class="comm-msg">“ Nu intreba niciodata o femeie de varsta si greutate! ;) ”</p>
+                            <a class="comm-source">La mulți ani, Ayase!</a>
+                            <span class="comm-date"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 hours ago</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- LATEST COMMENTS END -->
+            </div>
+
+            <div class="col-md-12 col-lg-8 left-side">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT START -->
+    <div class="chat-box">
+        <span class="show-chat">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i> LIVE CHAT
+        </span>
+        <div class="chat">
+            <script id="cid0020000150618151304" data-cfasync="false" async src="http://st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">
+                {
+                    "handle":"wien-subs2", "arch":"js", "styles":{ "a":"000000", "b":100, "c":"FFFFFF", "d":"FFFFFF", "k":"000000", "l":"000000", "m":"000000", "n":"FFFFFF", "p":"10", "q":"000000", "r":100, "fwtickm":1, "showx":0 }
+                }
+            </script>
+        </div>
+    </div>
+    <!-- CHAT END -->
+    <!-- ANIME QUICK SEARCH SIDEBAR START -->
+    <div class="anime-quick-search">
+        <div class="quick-search-overlay mCustomScrollbar" data-mcs-theme="minimal-dark">
+            <div class="close-btn">
+                <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+            </div>
+            <div class="anime-details">
+                <div class="anime-header">
+                    <div class="poster">
+                        <img src="~/images/AnimeImages/10.jpg" class="component-shadow" />
+                        <div class="anime-score"><span class="glyphicon glyphicon-star" style="color:gold;"></span><span class="result-score">7.49</span></div>
+                    </div>
+                    <div class="details">
+                        <div class="anime-title"><b>Kono Subarashii Sekai ni Shukufuku wo! 2</b> (<span class="anime-type">TV</span>)</div>
+                        <div class="genre-list">
+                            <span>Aventura</span>
+                            <span>Comedie</span>
+                            <span>Supernatural</span>
+                            <span>Magie</span>
+                            <span>Fantezie</span>
+                        </div>
+                        <div class="anime-synonyms">Sinonime: Give Blessings to This Wonderful World! 2</div>
+                        <div class="anime-episodes">Episoade: 10</div>
+                        <div class="anime-date">Premiera: Winter 2017</div>
+                        <div class="anime-status">Finished Airing</div>
+                    </div>
+                </div>
+            </div>
+            <div class="anime-description">
+                <b>Descriere:</b><br />
+                After dying a laughable and pathetic death on his way back from buying a game, high school student and recluse Kazuma Satou finds himself sitting before a beautiful but obnoxious goddess named Aqua. She provides the NEET with two options: continue on to heaven or reincarnate in every gamer's dream—a real fantasy world! Choosing to start a new life, Kazuma is quickly tasked with defeating a Demon King who is terrorizing villages. But before he goes, he can choose one item of any kind to aid him in his quest, and the future hero selects Aqua. But Kazuma has made a grave mistake—Aqua is completely useless!
+                Unfortunately, their troubles don't end here; it turns out that living in such a world is far different from how it plays out in a game. Instead of going on a thrilling adventure, the duo must first work to pay for their living expenses. Indeed, their misfortunes have only just begun!
+            </div>
+            <div class="anime-episodes-list">
+                <div class="anime-episodes-header"><b>Episoade</b></div>
+                <div class="anime-episode">EP #1: "Give Me Deliverance from this Judicial Injustice!"</div>
+                <div class="anime-episode">EP #2: "A Friend For This Crimson Demon Girl!"</div>
+                <div class="anime-episode">EP #3: "Peace for the Master of This Labyrinth!"</div>
+                <div class="anime-episode">EP #4: "A Betrothed for This Noble Daughter!"</div>
+                <div class="anime-episode">EP #5: "Servitude for This Masked Knight!"</div>
+                <div class="anime-episode">EP #6: "Goodbye to This Irritating Living World!"</div>
+                <div class="anime-episode">EP #7: "An Invitation for This Knucklehead!"</div>
+                <div class="anime-episode">EP #8: "Sightseeing in This Pitiful City!"</div>
+                <div class="anime-episode">EP #9: "A Goddess for This Corrupt Hot Springs Town!"</div>
+                <div class="anime-episode">EP #10: "God's Blessing on This Wonderful Party!"</div>
+            </div>
+        </div>
+    </div>
+    <!-- ANIME QUICK SEARCH SIDEBAR END -->
+    <!-- FOOTER START -->
+    <div class="footer">
+        © Wien-Subs - Powered by <a href="https://www.neoit.ro/">NeoIT Solutions™</a> | <span class="show-disclaimer">Repudiere/Disclaimer</span>
+        <div class="disclaimer">
+            Repudiere/Disclaimer <br> Wien-Subs nu gazduiește fișiere video, audio sau orice alt fel fișier media. Noi nu suntem
+            responsabili pentru legalitatea drepturilor de autor. Dacă aveți orice problemă vă rugăm contactați corespunzător proprietarii
+            de fișiere media sau site-urile gazdă. Wien-Subs not hosting files video, audio or any other media file. We are not
+            responsible for the legality of copyright. If you have any problems please contact the appropriate owners of media
+            files or host sites.
+        </div>
+    </div>
+    <!-- FOOTER END -->
+
+
+</body>
+
+</html>
+
+
+
+<script>
+    var menuHeight = $('.nav-header-bar').height();
+    var scrollEnded = true;
+
+    $(window).scroll(function () {
+        var scrolledDistance = $(this).scrollTop();
+        var headerHeight = $('.header-video-container').height();
+        if ((headerHeight - menuHeight < scrolledDistance)) {
+            $('.nav-header-bar').addClass('nav-header-bar-fixed');
+        }
+        else {
+            $('.nav-header-bar').removeClass('nav-header-bar-fixed');
+        }
+    });
+
+    $('.left, .right').click(function () {
+        if (scrollEnded == false)
+            return;
+
+        var itemWidth = $(".news-list-item").width();
+        if ($(this).hasClass("left")) {
+            scrollEnded = false;
+            $(".news-list").animate({
+                scrollLeft: "-=" + itemWidth + "px",
+            },
+              function () {
+                  scrollEnded = true;
+              });
+        }
+        else {
+            scrollEnded = false;
+            $(".news-list").animate({
+                scrollLeft: "+=" + itemWidth + "px",
+
+            },
+              function () {
+                  scrollEnded = true;
+              });
+        }
+    })
+
+    var searchTimeOut;
+    $(".anime-search-input").on("input", function () {
+        $(".spinner").show();
+        clearTimeout(searchTimeOut);
+        $(".no-results").hide();
+        var animeSearchTitle = $(this).val();
+        if(animeSearchTitle == ""){
+            $(".anime-search-results").hide();
+            var resultTemplate = $(".result").clone();
+            resultTemplate.css("display", "none");
+            $(".result-list").html(resultTemplate[0].outerHTML);
+            return;
+        }
+
+        $(".anime-search-results").show();
+        $(".search-value").text(animeSearchTitle);
+        searchTimeOut = setTimeout(function(){
+            $.ajax({
+                url: "@Url.Action("SearchAnime","Home")" + "?searchText=" + animeSearchTitle,
+                success: function (data) {
+                    console.log(data);
+                    if(data.more != undefined){
+                        $(".result-list").hide();
+                        $(".spinner").hide();
+                        $(".no-results").show();
+                        return;
+                    }
+                    $(".no-results").hide();
+                    var resultList = "";
+                    for(i = 0; i<data.length; i++){
+                        var resultTemplate = $(".result").clone();
+                        resultTemplate.find(".anime-image img").attr("src", data[i].image);
+                        resultTemplate.find(".anime-title b").text(data[i].title);
+                        resultTemplate.find(".anime-title .anime-type").text(data[i].type);
+                        resultTemplate.find(".anime-episodes").text("Episoade: " + data[i].episodes);
+                        resultTemplate.find(".anime-score .result-score").text(data[i].score);
+                        resultTemplate.find(".anime-status").text(data[i].status);
+                        resultTemplate.css("display", "table");
+                        resultList += resultTemplate[0].outerHTML;
+                    }
+                    $(".result-list").html(resultList);
+                    $(".result-list").show();
+                    $(".spinner").hide();
+
+                }
+            });
+        }, 500);
+    });
+
+    $(".anime-search-input").focusin(function(){
+        var animeSearchTitle = $(this).val();
+        if(animeSearchTitle == ""){
+            return;
+        }
+        $(".anime-search-results").show();
+
+    })
+
+    //$(".anime-search-input").focusout(function(){
+    //    $(".anime-search-results").hide();
+    //});
+
+    $(".close-btn").click(function(){
+        $(".anime-quick-search").hide();
+    })
+
+</script>
