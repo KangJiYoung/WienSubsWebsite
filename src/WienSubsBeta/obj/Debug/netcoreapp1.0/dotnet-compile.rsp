@@ -1,5 +1,5 @@
---temp-output:E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\obj\Debug\netcoreapp1.0\
---out:E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\bin\Debug\netcoreapp1.0\WienSubsBeta.dll
+--temp-output:E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\obj\Debug\netcoreapp1.0\
+--out:E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\bin\Debug\netcoreapp1.0\WienSubsBeta.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -197,8 +197,8 @@
 --reference:C:\Users\uchih\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\uchih\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\uchih\.nuget\packages\System.Xml.XmlDocument\4.0.1\ref\netstandard1.3\System.Xml.XmlDocument.dll
---resource:"E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\obj\Debug\netcoreapp1.0\WienSubsBetadotnet-compile.deps.json",WienSubsBeta.deps.json
-E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\Program.cs
-E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\Startup.cs
-E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\Controllers\HomeController.cs
-E:\Anime Fansub Project\WienSubsBeta\src\WienSubsBeta\Domain\Anime.cs
+--resource:"E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\obj\Debug\netcoreapp1.0\WienSubsBetadotnet-compile.deps.json",WienSubsBeta.deps.json
+E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\Program.cs
+E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\Startup.cs
+E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\Controllers\HomeController.cs
+E:\Anime Fansub Project\WienSubsWebsite\src\WienSubsBeta\Domain\Anime.cs

@@ -122,7 +122,17 @@ $(function () {
     $(".show-disclaimer").click(function () {
         $(".disclaimer").toggleClass("show-disc");
     })
+
+    $(".switch-theme").click(function () {
+        $("body").toggleClass("dark-theme");
+
+        if ($("body").hasClass("dark-theme"))
+            $(this).find("b").text("light theme");
+        else
+            $(this).find("b").text("dark theme");
+    })
 })
+
 
 function updateFbLikeBox() {
     var likeBox = $("#facebook-like-box");

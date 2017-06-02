@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
     background-position-y: 100%;
     background-position-x: -20%;
+    background-color:white;
 }
 
 .show {
@@ -18,7 +19,30 @@ body {
 /* Shadow - Page Component */
 
 .component-shadow {
-    box-shadow: 2px 2px 2px 1.5px black, -2px -2px 2px 1.5px black;
+    box-shadow: 1px 1px 1px 1.5px black, -1px -1px 1px 1.5px black;
+}
+
+/* Dark Theme */
+.dark-theme{
+    background-color: black;
+}
+
+.dark-theme .component-shadow{
+    box-shadow: 1px 1px 1px 1.5px white, -1px -1px 1px 1.5px white;
+}
+
+.dark-theme .switch-theme{
+    color: white;
+}
+
+/* Theme Switcher */
+
+.switch-theme{
+    color: black;
+    margin-top: 7px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
 }
 
 
@@ -460,7 +484,6 @@ a:focus {
     position: relative;
     display: flex;
     background-color: rgba(0, 0, 0, 0.8);
-    box-shadow: 2px 2px 2px 1.5px black, -2px -2px 2px 1.5px black;
 }
 
 .news .left,
@@ -850,9 +873,9 @@ a:focus {
 
 /* Facebook Like Box */
 
-#facebook-like-box {
+/*#facebook-like-box {
     box-shadow: 2px 2px 2px 1.5px black, -2px -2px 2px 1.5px black;
-}
+}*/
 
 
 /* Ranking */
@@ -1002,6 +1025,17 @@ a:focus {
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     margin-left: 10px;
+}
+
+.comm{
+    margin-top: 10px;
+}
+
+.comm .profile-pic{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: 2px solid white;
 }
 
 .comm .line {
