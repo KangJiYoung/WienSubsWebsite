@@ -6,11 +6,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>803d58aa-f7f2-44fc-ab09-a2fbc905e05f</ProjectGuid>
-    <RootNamespace>WienSubsBeta</RootNamespace>
+    <ProjectGuid>c0f06890-7df4-4dab-a8a3-6b8b186447c8</ProjectGuid>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <RootNamespace>AnimeCentral</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
